@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Library|Win32">
+      <Configuration>Library</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Library|x64">
+      <Configuration>Library</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C42F4FCA-CDC0-4A39-9244-BD9030A6810E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MarbleGame</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Library|Win32'">
+    <PlatformToolset>v141</PlatformToolset>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Library|x64'">
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\Tarik\Desktop\Libs\bullet-2.82-r2704\src;C:\Users\Tarik\Documents\Visual Studio 2010\Projects\MarbleGame\MarbleGame\src;C:\Users\Tarik\Desktop\Libs\freetype-2.5.3\include;C:\Users\Tarik\Documents\Visual Studio 2010\Projects\MarbleGame\MarbleGame\libpng;C:\Users\Tarik\Documents\Visual Studio 2010\Projects\MarbleGame\MarbleGame\zlib;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;C:\Program Files %28x86%29\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Tarik\Documents\Visual Studio 2010\Projects\BulletPhysics\lib;C:\Users\Tarik\Desktop\Libs\freetype-2.5.3\objs\win32\vc2010;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\Tarik\Documents\Visual Studio 2010\Projects\MarbleGame\MarbleGame\libpng;C:\Users\Tarik\Documents\Visual Studio 2010\Projects\MarbleGame\MarbleGame\zlib;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;C:\Users\Tarik\Documents\Visual Studio 2010\Projects\MarbleGame\MarbleGame\Bullet;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\Tarik\Desktop\Libs\bullet-2.82-r2704\src;C:\Users\Tarik\Documents\Visual Studio 2010\Projects\MarbleGame\MarbleGame\src;C:\Users\Tarik\Desktop\Libs\freetype-2.5.3\include;C:\Users\Tarik\Documents\Visual Studio 2010\Projects\MarbleGame\MarbleGame\libpng;C:\Users\Tarik\Documents\Visual Studio 2010\Projects\MarbleGame\MarbleGame\zlib;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Tarik\Documents\Visual Studio 2010\Projects\BulletPhysics\lib;C:\Users\Tarik\Desktop\Libs\freetype-2.5.3\objs\win32\vc2010;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Library|Win32'">
+    <IncludePath>C:\Users\Tarik\Desktop\bullet-2.82-r2704\src;C:\Users\Tarik\Documents\Visual Studio 2010\Projects\MarbleGame\MarbleGame\src;C:\Users\Tarik\Desktop\freetype-2.5.3\include;C:\Users\Tarik\Documents\Visual Studio 2010\Projects\MarbleGame\MarbleGame;C:\Users\Tarik\Documents\Visual Studio 2010\Projects\MarbleGame\MarbleGame\zlib;C:\Users\Tarik\Documents\Visual Studio 2010\Projects\MarbleGame\MarbleGame\libpng;C:\Users\Tarik\Documents\Visual Studio 2010\Projects\MarbleGame\MarbleGame\Bullet;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Tarik\Documents\Visual Studio 2010\Projects\BulletPhysics\lib;C:\Users\Tarik\Desktop\freetype-2.5.3\objs\win32\vc2010;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>stdafx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <FxCompile>
+      <EntryPointName>VSMain</EntryPointName>
+      <ShaderType>Vertex</ShaderType>
+      <ShaderModel>5.0</ShaderModel>
+      <EnableDebuggingInformation>true</EnableDebuggingInformation>
+      <DisableOptimizations>false</DisableOptimizations>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <ObjectFileOutput>$(OutDir)Resources\Shaders\%(Filename)_V.cso</ObjectFileOutput>
+    </FxCompile>
+    <PreBuildEvent>
+      <Command>cd ".."
+cd "Debug"
+ShaderCompiler.exe</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <FxCompile>
+      <EntryPointName>
+      </EntryPointName>
+      <ShaderType>Effect</ShaderType>
+      <ShaderModel>4.0</ShaderModel>
+      <EnableDebuggingInformation>false</EnableDebuggingInformation>
+      <DisableOptimizations>false</DisableOptimizations>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForcedIncludeFiles>stdafx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <FxCompile>
+      <EntryPointName />
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>4.0</ShaderModel>
+      <ShaderType>Effect</ShaderType>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Library|Win32'">
+    <FxCompile>
+      <EntryPointName />
+      <ShaderModel>4.0</ShaderModel>
+      <ShaderType>Effect</ShaderType>
+      <PreprocessorDefinitions>_EDITOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </FxCompile>
+    <ClCompile>
+      <ForcedIncludeFiles>stdafx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Gameplay\Platform.cpp" />
+    <ClCompile Include="src\Scene\InstancingNode.cpp" />
+    <ClCompile Include="src\Scene\ShadowMap.cpp" />
+    <ClCompile Include="src\Scene\NodeAnimation.cpp" />
+    <ClCompile Include="src\Scene\MatrixStack.cpp" />
+    <ClCompile Include="src\CGraphics.cpp" />
+    <ClCompile Include="src\DXShader.cpp" />
+    <ClCompile Include="src\EditorCameraController.cpp" />
+    <ClCompile Include="src\EditorFunctions.cpp" />
+    <ClCompile Include="libpng\png.c" />
+    <ClCompile Include="libpng\pngerror.c" />
+    <ClCompile Include="libpng\pngget.c" />
+    <ClCompile Include="libpng\pngmem.c" />
+    <ClCompile Include="libpng\pngpread.c" />
+    <ClCompile Include="libpng\pngread.c" />
+    <ClCompile Include="libpng\pngrio.c" />
+    <ClCompile Include="libpng\pngrtran.c" />
+    <ClCompile Include="libpng\pngrutil.c" />
+    <ClCompile Include="libpng\pngset.c" />
+    <ClCompile Include="libpng\pngtest.c" />
+    <ClCompile Include="libpng\pngtrans.c" />
+    <ClCompile Include="libpng\pngwio.c" />
+    <ClCompile Include="libpng\pngwrite.c" />
+    <ClCompile Include="libpng\pngwtran.c" />
+    <ClCompile Include="libpng\pngwutil.c" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Gameplay\ButtonController.cpp" />
+    <ClCompile Include="src\Scene\Camera.cpp" />
+    <ClCompile Include="src\Gameplay\CameraController.cpp" />
+    <ClCompile Include="src\EventManager\EventManager.cpp" />
+    <ClCompile Include="src\EventManager\Events.cpp" />
+    <ClCompile Include="src\Scene\Scene.cpp" />
+    <ClCompile Include="src\Scene\SceneNode.cpp" />
+    <ClCompile Include="src\UserInterface\Font.cpp" />
+    <ClCompile Include="src\Gameplay\GameLogic.cpp" />
+    <ClCompile Include="src\GameplayScreen.cpp" />
+    <ClCompile Include="src\Maths\GeometryMath.cpp" />
+    <ClCompile Include="src\Resources\Image.cpp" />
+    <ClCompile Include="src\InputManager\InputManager.cpp" />
+    <ClCompile Include="src\Gameplay\Level.cpp" />
+    <ClCompile Include="src\Resources\MaterialList.cpp" />
+    <ClCompile Include="src\Maths\MatrixMath.cpp" />
+    <ClCompile Include="src\Resources\Model.cpp" />
+    <ClCompile Include="src\Physics\Physics.cpp" />
+    <ClCompile Include="src\Gameplay\PlayerController.cpp" />
+    <ClCompile Include="src\pugixml.cpp" />
+    <ClCompile Include="src\Resources\Resource.cpp" />
+    <ClCompile Include="src\Resources\ResourceManager.cpp" />
+    <ClCompile Include="src\ScreenManager.cpp" />
+    <ClCompile Include="src\Scene\Skybox.cpp" />
+    <ClCompile Include="src\Gameplay\TeleporterController.cpp" />
+    <ClCompile Include="src\Scene\Terrain.cpp" />
+    <ClCompile Include="zlib\adler32.c" />
+    <ClCompile Include="zlib\compress.c" />
+    <ClCompile Include="zlib\crc32.c" />
+    <ClCompile Include="zlib\deflate.c" />
+    <ClCompile Include="zlib\gzclose.c" />
+    <ClCompile Include="zlib\gzlib.c" />
+    <ClCompile Include="zlib\gzread.c" />
+    <ClCompile Include="zlib\gzwrite.c" />
+    <ClCompile Include="zlib\infback.c" />
+    <ClCompile Include="zlib\inffast.c" />
+    <ClCompile Include="zlib\inflate.c" />
+    <ClCompile Include="zlib\inftrees.c" />
+    <ClCompile Include="zlib\trees.c" />
+    <ClCompile Include="zlib\uncompr.c" />
+    <ClCompile Include="zlib\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Gameplay\Platform.h" />
+    <ClInclude Include="src\Scene\Material.h" />
+    <ClInclude Include="src\Scene\ShadowMap.h" />
+    <ClInclude Include="src\Scene\NodeAnimation.h" />
+    <ClInclude Include="src\Scene\MatrixStack.h" />
+    <ClInclude Include="src\CGraphics.h" />
+    <ClInclude Include="src\DXShader.h" />
+    <ClInclude Include="src\EditorCameraController.h" />
+    <ClInclude Include="src\EditorFunctions.h" />
+    <ClInclude Include="libpng\config.h" />
+    <ClInclude Include="libpng\png.h" />
+    <ClInclude Include="libpng\pngconf.h" />
+    <ClInclude Include="libpng\pngdebug.h" />
+    <ClInclude Include="libpng\pnginfo.h" />
+    <ClInclude Include="libpng\pnglibconf.h" />
+    <ClInclude Include="libpng\pngprefix.h" />
+    <ClInclude Include="libpng\pngpriv.h" />
+    <ClInclude Include="libpng\pngstruct.h" />
+    <ClInclude Include="src\main.h" />
+    <ClInclude Include="src\Gameplay\ButtonController.h" />
+    <ClInclude Include="src\Scene\Camera.h" />
+    <ClInclude Include="src\Gameplay\CameraController.h" />
+    <ClInclude Include="src\EventManager\EventManager.h" />
+    <ClInclude Include="src\EventManager\Events.h" />
+    <ClInclude Include="src\Scene\Scene.h" />
+    <ClInclude Include="src\Scene\SceneNode.h" />
+    <ClInclude Include="src\UserInterface\Font.h" />
+    <ClInclude Include="src\Gameplay\GameLogic.h" />
+    <ClInclude Include="src\GameplayScreen.h" />
+    <ClInclude Include="src\Scene\InstancingNode.h" />
+    <ClInclude Include="src\Maths\GeometryMath.h" />
+    <ClInclude Include="src\Resources\Image.h" />
+    <ClInclude Include="src\InputManager\InputData.h" />
+    <ClInclude Include="src\InputManager\InputManager.h" />
+    <ClInclude Include="src\Gameplay\Level.h" />
+    <ClInclude Include="src\Resources\MaterialList.h" />
+    <ClInclude Include="src\Maths\MatrixMath.h" />
+    <ClInclude Include="src\Resources\Model.h" />
+    <ClInclude Include="src\Physics\NodeMotionState.h" />
+    <ClInclude Include="src\Physics\Physics.h" />
+    <ClInclude Include="src\Gameplay\PlayerController.h" />
+    <ClInclude Include="src\pugiconfig.hpp" />
+    <ClInclude Include="src\pugixml.hpp" />
+    <ClInclude Include="src\Maths\QuaternionMath.h" />
+    <ClInclude Include="src\Resources\Resource.h" />
+    <ClInclude Include="src\Resources\ResourceManager.h" />
+    <ClInclude Include="src\ScreenManager.h" />
+    <ClInclude Include="src\Scene\Skybox.h" />
+    <ClInclude Include="src\StringHash.h" />
+    <ClInclude Include="src\Scene\Terrain.h" />
+    <ClInclude Include="src\stdafx.h" />
+    <ClInclude Include="src\Gameplay\TeleporterController.h" />
+    <ClInclude Include="src\Util.h" />
+    <ClInclude Include="src\Maths\VectorMath.h" />
+    <ClInclude Include="zlib\crc32.h" />
+    <ClInclude Include="zlib\deflate.h" />
+    <ClInclude Include="zlib\gzguts.h" />
+    <ClInclude Include="zlib\inffast.h" />
+    <ClInclude Include="zlib\inffixed.h" />
+    <ClInclude Include="zlib\inflate.h" />
+    <ClInclude Include="zlib\inftrees.h" />
+    <ClInclude Include="zlib\trees.h" />
+    <ClInclude Include="zlib\zconf.h" />
+    <ClInclude Include="zlib\zlib.h" />
+    <ClInclude Include="zlib\zutil.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

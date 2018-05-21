@@ -1,0 +1,25 @@
+z -9.418674 -17.557175 4.577959
+o Platform0 None Wood -16 -21 -12  25 1 24  0
+o Platform1 None Wood -3 -20 0  8 3 8  0
+o Platform2 None Metal -7 -20 -7  2 12 2  0
+o Platform3 None Wood 9 -21 -1  5 7 10  0
+r Ramp0 None Wood 3 -17 3  6 3 3  2
+o Platform4 None Wood -20 -21 -21  4 1 15  0
+o Platform5 None Wood -19 -21 -4  3 5 1  0
+o Platform6 None Wood -19 -21 -6  1 5 2  0
+c Corner0 None Wood -18 -20 -6  2 4 2  1
+o Platform7 None Wood -18 -21 -6  2 1 2  0
+o Platform8 None Wood -13 -21 -21  9 6 3  0
+o Platform9 None Wood -20 -20 -21  4 3 3  0
+r Ramp1 None Wood -20 -20 -18  6 3 4  3
+r Ramp2 None Wood -16 -17 -21  3 2 3  2
+o Platform10 None Wood -16 -21 -21  3 4 3  0
+t Tel0 None Tel1 -5.879026 -13.529270 -19.470467
+o Platform11 None MarbleFloor -8 -8 -8  15 1 20  0
+o Platform12 None Metal -7 -20 9  2 12 2  0
+o Platform13 None Metal 3 -17 6  2 9 2  0
+t Tel1 None Tel0 5.131922 -5.529268 -4.849536
+s Star0 None 6.971573 -18.950001 4.520597
+s Star1 None 0.160722 -15.950003 3.847895
+o Platform14 None Wood 9 -21 -12  13 1 4  0
+o Platform15 None Wood 22 -21 -12  7 1 25  0
